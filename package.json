@@ -13,7 +13,7 @@
     "livereload": "^0.3.6"
   },
   "scripts": {
-    "start": "node_modules/.bin/http-server -c-1 > /dev/null & node_modules/.bin/livereload . -i 200 > /dev/null"
+    "start": "node_modules/.bin/http-server -c-1 & node_modules/.bin/livereload . -i 200"
   },
   "repository": {
     "type": "git",
