@@ -10,7 +10,7 @@
     };
 
     function getFirebaseRef(child) {
-      var url = 'https://ng-workshop.firebaseio.com/' + child + '/' + formattedDate;
+      var url = 'https://tieto-ng-workshop.firebaseio.com/' + child + '/' + formattedDate;
       return new Firebase(url);
     }
 
