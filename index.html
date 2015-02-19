@@ -40,7 +40,7 @@
     </div>
     <div ng-if="workshop.feedback">
       <strong>Preview</strong>
-      <div>{{workshop.feedback | amazing}}</div>
+      <div>{{workshop.feedback | uppercase}}</div>
     </div>
     <check-human is-human="client.isHuman"></check-human>
     <button ng-disabled="!client.isHuman"
@@ -60,7 +60,6 @@
 <!-- bring in our own stuff -->
 <script src="app.js"></script>
 <script src="check-human.js"></script>
-<script src="amazing.js"></script>
 
 </body>
 </html>
