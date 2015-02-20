@@ -1,20 +1,22 @@
 (function() {
-  'use strict';
+    'use strict';
 
-  angular.module('app').controller('FeedbackCtrl', FeedbackCtrl);
+    angular.module('app').controller('FeedbackCtrl', FeedbackCtrl);
 
-  function FeedbackCtrl() {
-    var vm = this;
+    function FeedbackCtrl() {
+        var vm = this;
 
-    // variable assignment
-    vm.workshop = {score: 10};
+        // variable assignment
+        vm.workshop = {
+            score: 10
+        };
 
-    // function assignment
-    vm.sendFeedback = sendFeedback;
+        // function assignment
+        vm.sendFeedback = sendFeedback;
 
-    //function declaration
-    function sendFeedback(workshop) {
-      alert(JSON.stringify(workshop, null, 2));
+        //function declaration
+        function sendFeedback(workshop) {
+            alert(JSON.stringify(workshop, null, 2));
+        }
     }
-  }
 })();
