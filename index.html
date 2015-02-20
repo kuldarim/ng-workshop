@@ -1,58 +1,53 @@
 <!DOCTYPE html>
 <html ng-app="app">
 <head lang="en">
-  <meta charset="UTF-8">
-  <title>ng-workshop</title>
-  <meta name="description" content="Interactive AngularJS Tutorial" />
-  <meta name="keywords" content="AngularJS, AngularJS Tutorial" />
-  <meta name="author" content="Kent C. Dodds" />
+    <meta charset="UTF-8">
+    <title>ng-workshop</title>
+    <meta name="description" content="Interactive AngularJS Tutorial" />
 
-  <!-- Bring in Bootstrap css so things look nice by default -->
-  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css"/>
+    <!-- Bring in Bootstrap css so things look nice by default -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css"/>
 
 </head>
 <body>
 
-
 <div class="container">
-  <h1>
-    Feedback
-    <span ng-if="workshop.attendee">from {{workshop.attendee}}</span>
-  </h1>
+    <h1>
+      Feedback
+      <span ng-if="workshop.attendee">from {{workshop.attendee}}</span>
+    </h1>
 
-  <form>
-    <div class="form-group">
-      <label for="name">Name</label>
-      <input ng-model="workshop.attendee" type="text" class="form-control" id="name"/>
-    </div>
-    <div class="form-group">
-      <label for="score">Score</label>
-      <input  ng-model="workshop.score" type="number" min="1" max="10" class="form-control" id="score"/>
-    </div>
-    <div class="form-group">
-      <label for="feedback">Feedback</label>
-      <textarea ng-model="workshop.feedback"
-                placeholder="{{workshop.score ? 'Why the ' + workshop.score + '?' : ''}}"
-                id="feedback"
-                class="form-control"
-                rows="3"></textarea>
-      <p class="help-block">Please be kind and honest :-)</p>
-    </div>
-    <div ng-if="workshop.feedback">
-      <strong>Preview</strong>
-      <div>{{workshop.feedback | uppercase}}</div>
-    </div>
-    <check-human is-human="client.isHuman"></check-human>
-    <button ng-disabled="!client.isHuman"
-            type="submit"
-            class="btn btn-primary">
-      Send Feedback
-    </button>
-  </form>
+    <form>
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input ng-model="workshop.attendee" type="text" class="form-control" id="name"/>
+        </div>
+        <div class="form-group">
+            <label for="score">Score</label>
+            <input  ng-model="workshop.score" type="number" min="1" max="10" class="form-control" id="score"/>
+        </div>
+        <div class="form-group">
+            <label for="feedback">Feedback</label>
+            <textarea ng-model="workshop.feedback"
+                    placeholder="{{workshop.score ? 'Why the ' + workshop.score + '?' : ''}}"
+                    id="feedback"
+                    class="form-control"
+                    rows="3"></textarea>
+            <p class="help-block">Please be kind and honest :-)</p>
+        </div>
+        <div ng-if="workshop.feedback">
+            <strong>Preview</strong>
+            <div>{{workshop.feedback | uppercase}}</div>
+        </div>
+        <check-human is-human="client.isHuman"></check-human>
+        <button ng-disabled="!client.isHuman"
+                type="submit"
+                class="btn btn-primary">
+            Send Feedback
+        </button>
+    </form>
 
 </div>
-
-
 
 <!-- bring in angular -->
 <script src="node_modules/angular/angular.js"></script>
