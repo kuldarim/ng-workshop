@@ -1,6 +1,6 @@
 # ng-workshop
 
-AngularJS tutorial. Goes through many useful concepts. for more information ![see the slides](http://slides.com/rimvydaskulda/intro-to-angularjs).
+AngularJS tutorial. Goes through many useful concepts. for more information [see the slides](http://slides.com/rimvydaskulda/intro-to-angularjs).
 
 ## Getting Started
 
