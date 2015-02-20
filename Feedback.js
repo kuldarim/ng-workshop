@@ -5,7 +5,7 @@
 
   function Feedback($log, Firebase) {
     var formattedDate = generateFormattedDate();
-    var url = 'https://ng-workshop.firebaseio.com/feedback/' + formattedDate;
+    var url = 'https://tieto-ng-workshop.firebaseio.com/feedback/' + formattedDate;
     var feedback = new Firebase(url);
     return {
       sendFeedback: sendFeedback
