@@ -1,7 +1,7 @@
 {
   "name": "ng-workshop",
   "version": "1.0.0",
-  "description": "AngularJS tutorial. Goes through many useful concepts. See https://slides.com/kentcdodds/intro-to-angularjs for more information.",
+  "description": "AngularJS tutorial. Goes through many useful concepts.",
   "main": "index.html",
   "dependencies": {
     "angular": "^1.3.11",
@@ -23,10 +23,10 @@
     "tutorial",
     "workshop"
   ],
-  "author": "Kent C. Dodds <kent@doddsfamily.us> (http://kent.doddsfamily.us)",
+  "author": "Rimvydas Kulda, Marius Bajorunas",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/kentcdodds/ng-workshop/issues"
+    "url": "https://github.com/kuldarim/ng-workshop/issues"
   },
-  "homepage": "https://github.com/kentcdodds/ng-workshop"
+  "homepage": "https://github.com/kuldarim/ng-workshop"
 }

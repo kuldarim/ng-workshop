@@ -1,6 +1,6 @@
 (function() {
-  'use strict';
-  var app = angular.module('app', []);
+      'use strict';
+      var app = angular.module('app', []);
 
-  app.constant('Firebase', Firebase);
+      app.constant('Firebase', Firebase);
 })();
